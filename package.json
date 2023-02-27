@@ -1,0 +1,28 @@
+{
+  "name": "post-it",
+  "version": "1.0.0",
+  "description": "PostIt - A FullStack Blogging App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node api/server",
+    "server": "nodemon api/server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node api/seeder",
+    "data:destroy": "node api/seeder -d"
+  },
+  "author": "Aamani Machani",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "joi": "^17.8.3",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
+  }
+}
