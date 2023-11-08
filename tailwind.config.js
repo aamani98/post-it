@@ -10,18 +10,19 @@ module.exports = {
       colors: {
         subtle: "#f9fafb",
         white: "#ffffff",
-        default:"#111827"
+        default: "#111827",
+        emphasis: "#9ca3af",
       },
       textColor: {
         default: "#000000",
         muted: "#9ca3af",
         success: "#285231",
         error: "#752522",
-        white: "#ffffff"
+        white: "#ffffff",
       },
       borderColor: {
         subtle: "#e5e7eb",
-        emphasis: "#9ca3af"
+        emphasis: "#9ca3af",
       },
     },
   },

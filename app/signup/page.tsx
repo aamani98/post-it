@@ -12,6 +12,7 @@ const Signup = () => {
     const [password,setPassword] = useState<string>("");
     const router = useRouter();
     const onSubmit = async(e) => {
+      console.log("Calling signup api")
         e.preventDefault();
         const response = await fetch("/api/auth/signup",{
             body:JSON.stringify({username,email,password}),
@@ -20,6 +21,7 @@ const Signup = () => {
                 "Content-Type":"application/json"
             }
         })
+        console.log("signup",response)
         if(response.ok){
               const signInResponse = await signIn<"credentials">("credentials",{
                 email,password,redirect:false})

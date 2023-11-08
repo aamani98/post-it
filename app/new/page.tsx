@@ -1,5 +1,13 @@
+"use client"
+import Editor from "@/components/Editor";
+import AppLayout from "@/components/Layout/AppLayout";
+
 const CreatePost = () => {
-    return <h1>Create Post</h1>
+    return (
+        <AppLayout>
+            <Editor />
+        </AppLayout>
+    )
 }
 
 export default CreatePost;

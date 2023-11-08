@@ -1,4 +1,7 @@
+import AppLayout from "@/components/Layout/AppLayout";
 
 export default function Home() {
-  return <h1 className="text-3xl font-bold underline">You are Signed in</h1>;
+  return<AppLayout>
+    <p>Articles list</p>
+  </AppLayout>
 }

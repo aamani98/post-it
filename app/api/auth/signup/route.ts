@@ -3,6 +3,7 @@ import prisma from '../../../../prisma';
 import { hash } from "bcryptjs";
 
 export const POST = async(req:Request) => {
+    console.log("Signup api")
     const {username, email, password} = await req.json();
     const user = await prisma.user.findFirst({
         where:{
