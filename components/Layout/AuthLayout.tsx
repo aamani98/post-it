@@ -12,7 +12,7 @@ const AuthLayout = (props: PropsWithChildren<AuthLayoutProps>) => {
   return (
     <>
       <div className="mb-12 mx-auto">
-        <Image alt="post-it logo" src={logo} className="h-32 w-60" />
+        <Image alt="post-it logo" src={logo} className="h-20 w-36" />
       </div>
       <div className="mx-auto max-w-md">
         <h2 className="text-default text-3xl font-bold ">{props.title}</h2>

@@ -23,7 +23,7 @@ const AUTH_OPTIONS: AuthOptions = {
         });
         if (!user) {
           console.log("No user found");
-          throw new Error("Incorrect Email or Password");
+          throw new Error("The email or password provided is incorrect");
         }
         const isPasswordValid = await compare(
           credentials?.password,
@@ -32,7 +32,7 @@ const AUTH_OPTIONS: AuthOptions = {
 
         if (!isPasswordValid) {
           console.log("Password not valid");
-          throw new Error("Incorrect Email or Password");
+          throw new Error("The email or password provided is incorrect");
         }
         return {
           id: user.id.toString(),

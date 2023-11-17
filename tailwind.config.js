@@ -17,7 +17,7 @@ module.exports = {
         default: "#000000",
         muted: "#9ca3af",
         success: "#285231",
-        error: "#752522",
+        error: "#b00020",
         white: "#ffffff",
       },
       borderColor: {
